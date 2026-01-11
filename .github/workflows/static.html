@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamyMama - Bantal Kehamilan Premium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-light: #fff0f3;
+            --pink-medium: #ffb3c1;
+            --pink-dark: #fb6f92;
+            --text-color: #4a4a4a;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+            background-color: #fff;
+            line-height: 1.6;
+        }
+
+        /* --- Navigation --- */
+        nav {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--pink-dark);
+            font-weight: bold;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(135deg, var(--pink-light) 0%, #ffffff 100%);
+            display: flex;
+            align-items: center;
+            padding: 60px 10%;
+            min-height: 80vh;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--pink-dark);
+        }
+
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 30px;
+            box-shadow: 20px 20px 60px rgba(251, 111, 146, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.02);
+        }
+
+        /* --- CTA Button --- */
+        .cta-button {
+            background-color: var(--pink-dark);
+            color: white;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(251, 111, 146, 0.4);
+        }
+
+        .cta-button:hover {
+            background-color: #ff4d6d;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(251, 111, 146, 0.6);
+        }
+
+        /* --- Features Section --- */
+        .features {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            padding: 30px;
+            border-radius: 20px;
+            background: var(--pink-light);
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            background: #ffe5ec;
+        }
+
+        .feature-card i {
+            font-size: 2rem;
+            color: var(--pink-dark);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 2.5rem; }
+            .hero { padding: 40px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">DreamyMama.</div>
+        <div>
+            <a href="#" style="text-decoration:none; color:var(--text-color); margin-right:20px;">Manfaat</a>
+            <a href="#" class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;">Beli Sekarang</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Tidur Nyenyak, <br>Ibu & Bayi Bahagia.</h1>
+            <p>Rasakan kenyamanan pelukan awan dengan bantal ergonomis yang dirancang khusus untuk menopang punggung, perut, dan kaki Bunda sepanjang malam.</p>
+            <a href="#" class="cta-button">Pesan Sekarang - Diskon 30%</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&q=80&w=1000" alt="Ibu hamil tidur nyaman">
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Mengapa Bunda Membutuhkannya?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i>☁️</i>
+                <h3>Desain U-Shape</h3>
+                <p>Menopang seluruh tubuh secara 360 derajat tanpa perlu banyak bantal tambahan.</p>
+            </div>
+            <div class="feature-card">
+                <i>🌸</i>
+                <h3>Bahan Katun Organik</h3>
+                <p>Dingin di kulit dan anti-alergi, cocok untuk kulit sensitif selama masa kehamilan.</p>
+            </div>
+            <div class="feature-card">
+                <i>💤</i>
+                <h3>Kualitas Tidur Maksimal</h3>
+                <p>Mengurangi nyeri punggung dan pinggang secara signifikan sejak pemakaian pertama.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
